@@ -1,0 +1,115 @@
+/* Imports */
+
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap");
+
+/* Base */
+
+:root {
+  --primary-color: hsl(213, 100%, 50%);
+  --primary-color-light: hsl(213, 100%, 80%);
+  --accent-color: hsl(39, 92%, 61%);
+  --white-color: hsl(0, 0%, 98%);
+  --black-color: hsl(0, 0%, 10%);
+  --gray-color: hsl(209, 10%, 50%);
+  --danger-color: rgb(221, 47, 47);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Fira Sans", sans-serif;
+  color: var(--black-color);
+  background-color: var(--white-color);
+}
+
+.section {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Typography */
+
+.title {
+  margin: 1rem auto;
+  font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: 0.15rem;
+  text-transform: capitalize;
+  color: var(--primary-color);
+}
+
+.subtitle {
+  font-size: 0.95rem;
+  color: var(--gray-color);
+}
+
+.link {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+/*  Form */
+
+.form {
+  width: 100%;
+  max-width: 600px;
+  min-width: 300px;
+  margin: 1rem;
+  padding: 1rem;
+}
+
+.label {
+  display: block;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.input {
+  width: 100%;
+  margin: 0.5rem 0 1rem 0;
+  padding: 0.75rem 0.5rem;
+  outline: none;
+  border: 1px solid var(--black-color);
+  border-radius: 3px;
+  background-color: transparent;
+}
+
+/* Buttons */
+
+.button {
+  padding: 0.7rem;
+  color: var(--black-color);
+  background-color: transparent;
+  outline: none;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.button--primary {
+  width: 100%;
+  font-size: 1.15rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  color: var(--white-color);
+  background-color: var(--primary-color);
+}
+
+.button--secondary {
+  font-weight: bold;
+}
+
+.button--danger {
+  font-weight: bold;
+  color: var(--white-color);
+  background-color: var(--danger-color);
+}

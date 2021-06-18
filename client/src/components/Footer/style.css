@@ -1,0 +1,13 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 1.75rem;
+}
+
+.footer__text {
+  font-size: 1.15rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+}
